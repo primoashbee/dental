@@ -7,7 +7,9 @@ if($who=="ADMIN"){
 
 	$id = $_POST['id'];
 	$desc = $_POST['description'];
-	$sql ="update services set description ='".$desc."' where id='".$id."'";
+	//$name = $_POST['name'];
+	$price= $_POST['price'];
+	$sql ="update services set  description ='".$desc."', price = '".$price."' where id='".$id."'";
 	
 	$flag=mysqli_query($conn,$sql);
 		if($flag){

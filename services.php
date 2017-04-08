@@ -24,7 +24,7 @@
 	 <div class="container mtb">
 	 	<div class="row">
 		 	<div class="col-lg-8 col-lg-offset-2 centered">
-		 		<h2>We create awesome designs to standout your site or product. Check some of our latest works.</h2>
+		 		<h2>We're currently serving the following:</h2>
 		 		<br>
 		 		<div class="hline"></div>
 		 	</div>
@@ -306,7 +306,7 @@
 	<!-- *****************************************************************************************************************
      FOOTER
      ***************************************************************************************************************** -->
-<?php 
+	<?php 
 	require 'includes/footer.php';
 	require 'includes/script.php'
 	

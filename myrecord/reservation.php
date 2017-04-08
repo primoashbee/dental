@@ -56,6 +56,7 @@ if($who=="ADMIN"){
 	 			<th></th>
 	 			<th>Service Name</th>
 	 			<th>Description</th>
+	 			<th>Price</th>
 	 		
 	 		</thead>
 	 		<tbody>
@@ -74,6 +75,9 @@ if($who=="ADMIN"){
 	 				</td>
 	 				<td>
 	 					<?php echo $data['description'];?>
+	 				</td>
+	 				<td>
+	 					₱ <b><?php echo number_format($data['price']);?>.00</b>
 	 				</td>
 
 	 				

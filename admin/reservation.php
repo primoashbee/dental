@@ -51,6 +51,7 @@ if($who=="ADMIN"){
 	 		<thead>
 	 			<th>Service Name</th>
 	 			<th>Description</th>
+	 		
 	 			<th>Status</th>
 	 			<th>Action</th>
 	 		</thead>
@@ -67,6 +68,7 @@ if($who=="ADMIN"){
 	 				<td>
 	 					<?php echo $data['description'];?>
 	 				</td>
+	 			
 	 					<td><?php if($data['isApproved']=="FALSE"){
 	 						echo "PENDING";
 	 						}else{
@@ -101,7 +103,7 @@ if($who=="ADMIN"){
 	 			?>
 	 		</tbody>
 	 	</table>
-	 	<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton>
+	 	<!--<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton>-->
 	 </div><! --/container -->
 
 <div class="modal fade" id="myModal">

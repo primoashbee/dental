@@ -48,6 +48,7 @@ if($who=="ADMIN"){
 	 		<thead>
 	 			<th>Service Name</th>
 	 			<th>Description</th>
+	 			<th>Price</th>
 	 			<th>Action</th>
 	 		</thead>
 	 		<tbody>
@@ -64,12 +65,19 @@ if($who=="ADMIN"){
 	 					<?php echo $data['description'];?>
 	 				</td>
 	 				<td>
+	 					₱ <b><?php echo number_format($data['price']);?></b>
+	 				</td>
+	 				<td>
 	 					<button class="btn btn-sm btn-warning update-service" id="<?php echo $data['id']; ?>" 
 	 					service ="<?php echo $data['service'];?>"
-	 					description="<?php echo $data['description'];?>"><span class="glyphicon glyphicon-pencil"></span></button>
+	 					description="<?php echo $data['description'];?>"
+	 					price="<?php echo $data['price'];?>"
+						 ><span class="glyphicon glyphicon-pencil"></span></button>
 	 					<button class="btn btn-sm btn-danger" id="<?php echo $data['id']; ?>" 
 	 					service ="<?php echo $data['service'];?>"
-	 					description="<?php echo $data['description'];?>"><span class="glyphicon glyphicon-trash"></span></button>
+	 					description="<?php echo $data['description'];?>"
+	 					price="<?php echo $data['price'];?>"
+						 ><span class="glyphicon glyphicon-trash"></span></button>
 	 				</td>
 	 				
 	 			</tr>
@@ -98,6 +106,10 @@ if($who=="ADMIN"){
         		<label for ="txtDesc" class="control-label">Description Name</label>
         		<input type="text" id="txtDesc" class="form-control">
         	</div>
+        	<div class="form-group">
+        		<label for ="txtPrice" class="control-label">Price</label>
+        		<input type="number" id="txtPrice" class="form-control">
+        	</div>
         </form>
       </div>
       <div class="modal-footer">
@@ -124,9 +136,11 @@ if($who=="ADMIN"){
 			id = $(this).attr('id');
 			service = $(this).attr('service');
 			description = $(this).attr('description');
+			price = $(this).attr('price');
 			$('#txtMode').html('Update Service')
 			$('#txtDesc').val(description)
 			$('#txtService').val(service)
+			$('#txtPrice').val(price)
 			$('#txtService').attr('readonly','true')
 			$("#myModal").modal('show');
 		})
@@ -134,13 +148,14 @@ if($who=="ADMIN"){
 		if(mode=="update"){
 			service= $('#txtService').val()
 			description = $('#txtDesc').val()
+			price = $('#txtPrice').val()
 			if(id=="" || service =="" || description==""){
 				alert('Please Fill All')
 				return 0
 			}
 			$.ajax({
 				url:'../controllers/updateService.php',
-				data:{id:id,service:service,description:description},
+				data:{id:id,service:service,description:description,price:price},
 				dataType:'JSON',
 				type:'POST',
 				success:function(data){
@@ -151,13 +166,15 @@ if($who=="ADMIN"){
 		}else{
 			service= $('#txtService').val()
 			description = $('#txtDesc').val()
+			price = $('#txtPrice').val()
+			
 			if( service =="" || description==""){
 				alert('Please Fill All')
 				return 0
 			}
 			$.ajax({
 				url:'../controllers/addService.php',
-				data:{service:service,description:description},
+				data:{service:service,description:description,price:price},
 				dataType:'JSON',
 				type:'POST',
 				success:function(data){
@@ -175,9 +192,10 @@ if($who=="ADMIN"){
 			id =""
 			service = ""
 			description = ""
+			price = ""
 			$('#txtDesc').val(service)
 			$('#txtService').val(description)
-
+			$('#txtPrice').val(price)
 			$('#txtService').attr('readonly',false)
 			$("#myModal").modal('show');
 		})

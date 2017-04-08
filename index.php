@@ -12,9 +12,9 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h3>Reserve Now!</h3>
-					<h1>Dental Association of the Philippines</h1>
-					<h5>Address</h5>
-					<h5>Contact #</h5>				
+					<h1>REYES-PALOMER DENTAL CLINIC</h1>
+					<h5>San Antonio, Cabangan, Zambales</h5>
+					<h5>09153119569</h5>				
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 himg">
 					<img src="assets/img/browser.jpg" class="img-responsive">

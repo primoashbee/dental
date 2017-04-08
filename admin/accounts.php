@@ -66,7 +66,7 @@ if($who=="ADMIN"){
 	 			?>
 	 		</tbody>
 	 	</table>
-	 	<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton>
+	 	<a href="../sign-in.php"><buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton></a>
 	 </div><! --/container -->
 
 <div class="modal fade" id="myModal">

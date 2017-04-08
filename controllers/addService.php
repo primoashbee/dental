@@ -7,12 +7,13 @@ if($who=="ADMIN"){
 
 	$service = $_POST['service'];
 	$desc = $_POST['description'];
+	$price = $_POST['price'];
 	$sql ="Select * from services where service ='".$service."'";
 	$res=mysqli_query($conn,$sql);
 		if(mysqli_num_rows($res)){
 			$msg=array('msg'=>'Service Already Existing');
 		}else{
-			$sql ="insert into services(service,description,isDeleted)values('".$service."','".$desc."','FALSE')";
+			$sql ="insert into services(service,description,price,isDeleted)values('".$service."','".$desc."','".$price."','FALSE')";
 				$flag=mysqli_query($conn,$sql);
 					if($flag){
 						$msg=array('msg'=>'Service Added!');
