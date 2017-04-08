@@ -48,7 +48,8 @@ session_start();
 				
 	 			<h4>No Account Yet? Register</h4>
 	 			<div class="hline"></div>
-		 			<p><em><b>Note:</b></em> We will verify your application for registration! We'll send an email if we confirm your registration </p>
+		 			<!--<p><em><b>Note:</b></em> We will verify your application for registration! We'll send an email if we confirm your registration </p> !-->
+					 <p> Fill UP Form </p>
 		 			<form  method="post" action="controllers/signup.php" class="form" role="form">
 		 		
 					  <div class="form-group col-sm-12">

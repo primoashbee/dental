@@ -25,37 +25,13 @@
 
 	<!-- *****************************************************************************************************************
 	 SERVICE LOGOS
-	 ***************************************************************************************************************** -->
-	 <div id="service">
-	 	<div class="container">
- 			<div class="row centered">
- 				<div class="col-md-4">
- 					<i class="fa fa-heart-o"></i>
- 					<h4>Handsomely Crafted</h4>
- 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
- 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-flask"></i>
- 					<h4>Retina Ready</h4>
- 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
- 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
- 				</div>
- 				<div class="col-md-4">
- 					<i class="fa fa-trophy"></i>
- 					<h4>Quality Theme</h4>
- 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
- 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
- 				</div>		 				
-	 		</div>
-	 	</div><!--/container -->
-	 </div><!--/service  -->
+
 	 
 	<!-- *****************************************************************************************************************
 	 PORTFOLIO SECTION
 	 ***************************************************************************************************************** -->
 	 <div id="portfoliowrap">
-        <h3>LATEST WORKS</h3>
+        <h3>About US</h3>
 
         <div class="portfolio-centered">
             <div class="recentitems portfolio">
@@ -193,57 +169,6 @@
         </div><!-- portfolio container -->
 	 </div><!--/Portfoliowrap -->
 	 
-	 
-	<!-- *****************************************************************************************************************
-	 MIDDLE CONTENT
-	 ***************************************************************************************************************** -->
-
-	 <div class="container mtb">
-	 	<div class="row">
-	 		<div class="col-lg-4 col-lg-offset-1">
-		 		<h4>More About Our Agency.</h4>
-		 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
- 				<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
-	 		</div>
-	 		
-	 		<div class="col-lg-3">
-	 			<h4>Frequently Asked</h4>
-	 			<div class="hline"></div>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			
-	 		</div>
-	 		
-	 		<div class="col-lg-3">
-	 			<h4>Latest Posts</h4>
-	 			<div class="hline"></div>
-	 				<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 			<p><a href="#">Lorem Ipsum blabhblah</a></p>
-	 		</div>
-	 		
-	 	</div><! --/row -->
-	 </div><! --/container -->
-	 
-	<!-- *****************************************************************************************************************
-	 TESTIMONIALS
-	 ***************************************************************************************************************** -->
-	 <div id="twrap">
-	 	<div class="container centered">
-	 		<div class="row">
-	 			<div class="col-lg-8 col-lg-offset-2">
-	 			<i class="fa fa-comment-o"></i>
-	 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-	 			<h4><br/>John Doe</h4>
-	 			<p>Customer</p>
-	 			</div>
-	 		</div><! --/row -->
-	 	</div><! --/container -->
-	 </div><! --/twrap -->
 	 
 	<!-- *****************************************************************************************************************
 	 OUR CLIENTS

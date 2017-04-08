@@ -13,9 +13,6 @@
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
             <li ><a href="index.php">HOME</a></li>
-            <li ><a href="services.php">SERVICES OFFERED</a></li>
-            <li ><a href="about-us.php">ABOUT US</a></li>
-            <li ><a href="contact-us.php">CONTACT US</a></li>
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">SIGN IN<b class="caret"></b></a>
