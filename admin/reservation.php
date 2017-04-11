@@ -109,7 +109,7 @@ if($who=="ADMIN"){
 	 			?>
 	 		</tbody>
 	 	</table>
-	 	<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Reserve</buton>
+	 	<!--<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Reserve</buton> !-->
 	 </div><!--container !-->
 
 <div class="modal fade" id="myModal">
