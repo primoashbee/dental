@@ -26,7 +26,7 @@ if($who=="ADMIN"){
 	    <div class="container">
 
 			<div class="row">
-				<h3>Lists of Services Offered</h3>
+				<h3>My Reservations</h3>
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 
@@ -88,7 +88,6 @@ if($who=="ADMIN"){
 	 			?>
 	 		</tbody>
 	 	</table>
-	 	<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton>
 	 </div><! --/container -->
 
 <!-- Modal -->

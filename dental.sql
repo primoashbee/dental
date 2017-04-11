@@ -27,12 +27,13 @@ CREATE TABLE `accounts` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE current_timestamp(),
   `isAdmin` varchar(255) NOT NULL,
+  `isDeleted` tinyint(1) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 /*Data for the table `accounts` */
 
-insert  into `accounts`(`id`,`username`,`password`,`created_at`,`updated_at`,`isAdmin`) values (10,'admin@dental.com','1234','2016-07-21 17:08:47','2016-07-21 17:09:15','TRUE'),(16,'john.doe@dental.com','1234','2017-04-08 10:46:55','0000-00-00 00:00:00','FALSE');
+insert  into `accounts`(`id`,`username`,`password`,`created_at`,`updated_at`,`isAdmin`,`isDeleted`) values (10,'admin@dental.com','1234','2016-07-21 17:08:47','2017-04-10 13:38:22','TRUE',0),(16,'john.doe@dental.com','1234','2017-04-08 10:46:55','2017-04-10 13:38:32','FALSE',0);
 
 /*Table structure for table `customers` */
 
@@ -66,11 +67,11 @@ CREATE TABLE `reservation` (
   `r_time` varchar(255) DEFAULT NULL,
   `isApproved` varchar(255) NOT NULL,
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 /*Data for the table `reservation` */
 
-insert  into `reservation`(`id`,`customer_id`,`service_id`,`reserved_at`,`r_date`,`r_time`,`isApproved`) values (28,'9','7','2017-04-08 11:00:49','2017-04-10','9:00AM','FALSE');
+insert  into `reservation`(`id`,`customer_id`,`service_id`,`reserved_at`,`r_date`,`r_time`,`isApproved`) values (28,'9','7','2017-04-08 11:00:49','2017-04-10','9:00AM','FALSE'),(29,'9','7','2017-04-11 11:10:12','2017-04-18','10:00AM','FALSE'),(30,'9','8','2017-04-11 11:10:12','2017-04-18','10:00AM','FALSE');
 
 /*Table structure for table `services` */
 
@@ -83,11 +84,11 @@ CREATE TABLE `services` (
   `isDeleted` varchar(255) DEFAULT NULL,
   `price` varchar(255) DEFAULT NULL,
   KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 /*Data for the table `services` */
 
-insert  into `services`(`id`,`service`,`description`,`isDeleted`,`price`) values (7,'Consulation','Fee','FALSE','5001');
+insert  into `services`(`id`,`service`,`description`,`isDeleted`,`price`) values (7,'Consulation','Fee','FALSE','5001'),(8,'Oral Prophalaxis','Cleaning','FALSE','1500');
 
 /*Table structure for table `qryinformation` */
 

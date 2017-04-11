@@ -49,8 +49,10 @@ if($who=="ADMIN"){
 	?>
 	 	<table class="table table-responsive">
 	 		<thead>
-	 			<th>Service Name</th>
-	 			<th>Description</th>
+	 			<th>Client Name</th>
+	 			
+	 			<th>Date</th>
+	 			<th>Time</th>
 	 		
 	 			<th>Status</th>
 	 			<th>Action</th>
@@ -63,10 +65,14 @@ if($who=="ADMIN"){
 	 			?>
 	 			<tr>
 	 				<td>
-	 					<?php echo $data['service'];?>
+	 					<?php echo $data['fname'].' '.$data['lname'];?>
+	 				</td>
+	 			
+	 				<td>
+	 					<?php echo $data['r_date'];?>
 	 				</td>
 	 				<td>
-	 					<?php echo $data['description'];?>
+	 					<?php echo $data['r_time'];?>
 	 				</td>
 	 			
 	 					<td><?php if($data['isApproved']=="FALSE"){
@@ -103,8 +109,8 @@ if($who=="ADMIN"){
 	 			?>
 	 		</tbody>
 	 	</table>
-	 	<!--<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Add New</buton>-->
-	 </div><! --/container -->
+	 	<buton type="button" class="btn btn-lg btn-success" id="btnAddNewShow">Reserve</buton>
+	 </div><!--container !-->
 
 <div class="modal fade" id="myModal">
   <div class="modal-dialog">
